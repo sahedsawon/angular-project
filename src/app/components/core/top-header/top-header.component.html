@@ -1,0 +1,12 @@
+<mat-card>
+  <button mat-button [matMenuTriggerFor]="Products">Products</button>
+  <mat-menu #Products="matMenu">
+    <button mat-menu-item>Product Item 1</button>
+    <button mat-menu-item>Product Item 2</button>
+  </mat-menu>
+  <button mat-button [matMenuTriggerFor]="Services">Services</button>
+  <mat-menu #Services="matMenu">
+    <button mat-menu-item>Service Item 1</button>
+    <button mat-menu-item>Service Item 2</button>
+  </mat-menu>
+</mat-card>

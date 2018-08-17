@@ -1,0 +1,10 @@
+.custom-container{
+    padding-left: 15px;
+    text-align: justify;
+}
+
+.clear-icon-left-nav{
+    margin-left:  -21px;
+    cursor: pointer;
+}
+

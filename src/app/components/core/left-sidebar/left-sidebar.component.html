@@ -1,0 +1,25 @@
+
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')" (closed)="events.push('close!')">
+      <mat-list>
+        <mat-list-item>Products</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Services</mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>Contact Us</mat-list-item>
+      </mat-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      
+      <div class="custom-container">
+        <span class="clear-icon-left-nav" (click)="sidenav.toggle()">
+          <i #smsClear class="material-icons"> clear</i>
+          <!-- <i #smsExpend class="material-icons">format_align_justify</i> -->
+        </span>
+
+        <router-outlet></router-outlet>
+        
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
